@@ -97,7 +97,7 @@ app.put('/usuario/:id', [verificaToken, verificaAdmin_Role], function(req, res) 
     })
 });
 
-app.delete('/usuario:id', [verificaToken, verificaAdmin_Role], function(req, res) {
+app.delete('/usuario/:id', [verificaToken, verificaAdmin_Role], function(req, res) {
     let id = req.params.id;
     console.log(req.params.id);
     // Usuario.findByIdAndRemove(id, (err, usuarioBorrado) => {
